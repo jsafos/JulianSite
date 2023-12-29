@@ -58,19 +58,100 @@
 }
 
 
-
-/* ------------------------- INTRO ------------------------- */
-
-
-
-
-
-
-
-
+/* ------------------------- ABOUT ------------------------- */
 
 .s-about{
   height: 3000px;
+}
+
+.s-about-header, 
+.s-about-subheader{
+  color: black;
+  text-align: center
 
 }
 
+.s-about-header{
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.s-about-subheader{
+  font-size: 30px;
+  background-color: aquamarine;
+}
+
+.s-about-profile{
+  display: flex;
+  flex-direction: row;
+  height: 3000px;
+}
+
+
+
+.s-about-left{
+  background-color: lightblue;
+  flex: 25%;
+}
+
+.s-about-right{
+  background-color: lightblue;
+  flex: 25%;
+}
+
+.s-about-center{
+  background-color: lightgrey;
+  flex: 50%;
+}
+
+.s-about-center-intro{
+  display: flex;
+  padding-top: 30px;
+}
+
+.s-about-pfp{
+  object-fit: cover;
+  height: 120px;
+  width: 120px;
+  margin-left: 20px;
+  display: inline-block;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.s-about-name{
+  background-color: green;
+  display: inline-block;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  align-self: center
+}
+
+
+.s-about-centre-content{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-top: 30px;
+  background-color: blanchedalmond;
+  justify-content: center;
+
+}
+
+.s-about-centre-col-left{
+  background-color: black;
+  flex: 50%;
+  height: 250px ;
+  
+}
+
+.s-about-centre-col-right{
+  background-color: white;
+  flex: 50%;
+  height: 250px ;
+}
