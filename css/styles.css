@@ -19,8 +19,6 @@
   text-align: center;
 }
 
-
-
 .s-intro-title, .s-intro-desc{
   font-family: 'Kanit', sans-serif;
   color: white;
@@ -58,7 +56,30 @@
   text-decoration: none;
 }
 
+.s-intro-social-buttons-display{
+  margin-top: 250px;
+}
 
+.s-intro-social-github,
+.s-intro-social-linkedin,
+.s-intro-social-email{
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  border:none;
+}
+
+.s-intro-social-github,
+.s-intro-social-email{
+  padding-left: 30px;
+}
+
+.s-intro-social-github:hover,
+.s-intro-social-linkedin:hover, 
+.s-intro-social-email:hover{
+  color: purple;
+  height: 50px;
+}
 /* ------------------------- ABOUT ------------------------- */
 
 .s-about{
@@ -69,7 +90,6 @@
 .s-about-subheader{
   color: black;
   text-align: center
-
 }
 
 .s-about-header{
@@ -155,8 +175,3 @@
   height: 250px ;
 }
 
-.s-linkedin{
-  color: wheat;
-  margin-top: 50px;
-  cursor: pointer;
-}
