@@ -6,12 +6,11 @@
 /* ------------------------- INTRO ------------------------- */
 
 #intro{ 
-  background-image: url("/images/pexels-francesco-ungaro-998641.jpg");
+  background: url("/images/pexels-francesco-ungaro-998641.jpg") no-repeat center fixed;
   background-size: cover;
-  width: 100svw;
-  height: 100svh;
+  width: 100svw; /*?*/
+  height: 100svh; /*?*/
   background-position: center;
-  background-attachment: fixed;
   display: table;
   text-align: center;
 }
@@ -19,6 +18,8 @@
 .s-intro{
   text-align: center;
 }
+
+
 
 .s-intro-title, .s-intro-desc{
   font-family: 'Kanit', sans-serif;
@@ -61,7 +62,7 @@
 /* ------------------------- ABOUT ------------------------- */
 
 .s-about{
-  height: 3000px;
+  height: 1000px;
 }
 
 .s-about-header, 
@@ -84,9 +85,8 @@
 .s-about-profile{
   display: flex;
   flex-direction: row;
-  height: 3000px;
+  height: 900px;
 }
-
 
 
 .s-about-left{
@@ -115,7 +115,6 @@
   width: 120px;
   margin-left: 20px;
   display: inline-block;
-  align-items: center;
   border-radius: 50%;
 }
 
@@ -154,4 +153,10 @@
   background-color: white;
   flex: 50%;
   height: 250px ;
+}
+
+.s-linkedin{
+  color: wheat;
+  margin-top: 50px;
+  cursor: pointer;
 }
