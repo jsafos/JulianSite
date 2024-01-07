@@ -275,3 +275,52 @@
   width: 100px;
   margin-bottom: 8px;
 }
+
+
+/* ------------------------- PROJECTS ------------------------- */
+
+.s-projects-grid{
+  margin: 0 8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: solid red 1px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.s-projects-project{
+  position: relative;
+  text-align: center;
+  padding: 0;
+  border: 1px solid black
+}
+
+.s-projects-project-image{
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+  
+}
+
+.s-projects-project-desc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.s-projects-project:hover{
+  cursor: pointer;
+}
+
+.s-projects-project:hover .s-projects-project-desc{
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
