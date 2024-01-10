@@ -5,8 +5,27 @@
 
 } 
 
-/* ------------------------- INTRO ------------------------- */
 
+/* ------------------------- ALL SECTIONS ------------------------- */
+
+.section-heading{
+  font-size: 20px;
+  color: darkblue;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.section-subheading{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+
+/* ======================= INTRO ======================= */
 
 .s-intro-explore {
   font-size: 1.2rem;
@@ -32,8 +51,6 @@
   background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
   color: rgb(4, 4, 38);
 }
-
-
 
 .s-intro{ 
   background: url("/images/pexels-francesco-ungaro-998641.jpg") no-repeat center fixed;
@@ -64,7 +81,6 @@
   display: flex;
   height: 100vh;
   margin: 0 auto;
-  
 }
 
 .s-intro-content-inner{
@@ -100,7 +116,6 @@
   margin-top: 90px;
   display: flex;
   justify-content: center;
-
 }
 
 .s-intro-explore{
@@ -112,8 +127,6 @@
   position: absolute;
   margin: 0 auto;
 }
-
-
 
 
 .s-intro-social-buttons-display{
@@ -144,6 +157,8 @@
 .s-intro-social-email:hover{
   color: purple;
 }
+
+
 /* ------------------------- ABOUT ------------------------- */
 
 .s-about{
@@ -152,25 +167,10 @@
   padding-bottom: 50px;
 }
 
-.s-about-header, 
-.s-about-subheader{
-  color: black;
-  text-align: center
-}
-
-.s-about-header{
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-.s-about-subheader{
-  font-size: 30px;
-}
 
 .s-about-profile{
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: row; 
 }
 
 .s-about-left{
@@ -191,7 +191,6 @@
 
 .s-about-center-intro{
   display: flex;
-  padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px black solid;
 }
@@ -220,7 +219,6 @@
   color: black;
   text-align: justify;
   font-size: 20px;
-
 }
 
 
@@ -254,17 +252,38 @@
 
 /* ------------------------- RESUME ------------------------- */
 
+.s-resume{
+  background-color: #c6c6c6;
+}
+
+.s-resume-subheader{
+  padding: 10px;
+}
+
+.s-resume-resume-dec{
+  font-size: 22px;
+  margin: 0 auto;
+  width: 625px;
+  justify-content: center;
+  
+  color: rgb(48, 48, 48);
+  text-align: center;
+  line-height: 35px;
+
+}
+
 .s-resume-timeline{
-  background-color: lightslategray;
   margin: 0 auto;
   max-width: 1000px;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
   color: black;
-  
 }
 
+.s-resume-work-experience{
+  margin-top: 70px;
+}
 
 .timeline-middle{
   background-color: black;
@@ -292,6 +311,8 @@
 }
 .timeline-left{
   padding-left: 40px;
+  padding-right: 20px;
+  margin-right: 40px;
 }
 
 .timeline-right h3{
@@ -303,12 +324,14 @@
 }
 
 .timeline-left h1 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
+  text-align: right;
 }
 
 .timeline-left h2 {
   font-size: 14px;
+  text-align: right;
 }
 
 .line{
@@ -316,6 +339,11 @@
   height: 2px;
   width: 100px;
   margin-bottom: 8px;
+}
+
+.s-resume-section{
+  font-size: 30px;
+  text-align: center;
 }
 
 
