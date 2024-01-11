@@ -48,7 +48,7 @@
         </section>
 
         <!-- ======================= ABOUT ======================= -->
-        <section id = "about" class = "s-about" style="color: red;"> 
+        <section id = "about" class = "s-about"> 
             
             <h1 class = "s-about-header section-heading"> ABOUT </h1>
             <h2 class = "s-about-subheader section-subheading"> Let me introduce myself. </h2>
@@ -131,12 +131,11 @@
             <div class="s-resume-resume-dec"> The following shows my engineering journey. I have experience working in a wide range of industries from vehicle, to aerospace, to consumer electronics. </div>
 
 
+            <!-------- Vertical timeline 1 -------->
             <div class = "s-resume-work-experience s-resume-section"> Work Experience</div>
-
-            <!--- Vertical timeline -->
-
             <div class="s-resume-timeline">
 
+                <!-------- ENTRY 4 -------->
                 <div class="timeline-left">
                     <h1> SOC Power Analysis & Design Verification Engineering Intern </h1>
                     <h2> Septemver 2023 &mdash; Present </h2>
@@ -156,8 +155,7 @@
                     </p>
                 </div>
 
-                <!-- ENtry -->
-
+                <!-------- ENTRY 3 -------->
                 <div class="timeline-left">
                     <h1> Sales and Trading Analyst Intern &mdash; xVA Trading </h1>
                     <h2> May 2023&mdash;September 2023 </h2>
@@ -177,8 +175,7 @@
                     </p>
                 </div>
 
-                 <!-- ENtry 2-->
-
+                <!-------- ENTRY 2 -------->
                 <div class="timeline-left">
                     <h1> Systems and Process Analyst Intern </h1>
                     <h2> May 2022&mdash;September 2022 </h2>
@@ -198,8 +195,7 @@
                     </p>
                 </div>
 
-                <!-- ENtry 3-->
-
+                <!-------- ENTRY 1 -------->
                 <div class="timeline-left">
                     <h1> Test Engineering Intern </h1>
                     <h2> May 2021&mdash;September 2021 </h2>
@@ -224,54 +220,48 @@
             </div>
 
 
-
+            <!-------- Vertical timeline 2 -------->
             <div class = "s-resume-work-experience s-resume-section"> Leadership Experience</div>
-
             <div class="s-resume-timeline">
 
-
-
-                 <!-- ENtry 2-->
-
+                <!-------- ENTRY 2 -------->
                 <div class="timeline-left">
-                    <h1> Systems and Process Analyst Intern </h1>
-                    <h2> May 2022&mdash;September 2022 </h2>
+                    <h1> Varsity Athlete & Team Manager </h1>
+                    <h2> September 2021&mdash;Present </h2>
                 </div>
 
                 <div class = "timeline-middle">
                     <div class="timeline-point">
-                        <img src="images/companies/cibc_logo.jpeg">
+                        <img src="images/companies/ye2OnIEq_400x400.png">
                     </div>
                 </div>
 
                 <div class="timeline-right">
-                    <h3> CIBC </h3>
+                    <h3> McMaster University Men’s Varsity Rugby Team </h3>
                     <p> 
-                        Operate the bank-wide Application Architecture Portfolio Management System (MAP) while ensuring compliance with governance standards to configure users and processes technology integrations and deviations.
-                        Performed User Acceptance Testing (UAT) and System Integration Testing (SIT) to validate features of MAP Updates.
+                        Developed time management skills and a strong work ethic by committing 20+ hours per week to training and games while maintaining a full engineering course load and other extra-curricular activities.
                     </p>
                 </div>
 
-                <!-- ENtry 3-->
-
+                <!-------- ENTRY 1 -------->
                 <div class="timeline-left">
-                    <h1> Test Engineering Intern </h1>
-                    <h2> May 2021&mdash;September 2021 </h2>
+                    <h1> Embedded Systems Software Engineer </h1>
+                    <h2> November 2021&mdash;Present </h2>
                 </div>
 
                 <div class = "timeline-middle">
                     <div class="timeline-point"></div>
                     <div class="timeline-point timeline-point-bottom">
-                        <img src="images/companies/q1iduaowvoemfvhlaudh.png">
+                        <img src="images/companies/Unknown.png">
                     </div>
                 </div>
 
                 <div class="timeline-right">
-                    <h3> Magna International </h3>
+                    <h3> McMaster Formula Electric - FSAE </h3>
                     <p> 
-                        Performed mechanical and electrical component testing on automobile latches and liftgate spindles.
-                        Compiled data and reports by operating environmental chambers, sound chambers, force gauges, multimeters, oscilloscopes, and vibration tables.
-                        Documented and identified test observations, equipment calibration, test incidents, and set-ups in per ISO 17025.
+                        Spearheading the development of the vehicle's traction control and torque vectoring system, by conducting research on the implementation of a PID controller within Simulink.
+                        Developed functions in C to implement an ADC abstraction library including a comprehensive error handler used in the vehicle's thermal management system and vehicle controller.
+                        Created DBC (CAN Bus Database) files used to decode raw CAN data for vehicle control signal verification
                     </p>
                 </div>
             
@@ -281,32 +271,33 @@
 
         <!-- ======================= PROJECTS ======================= -->
         <section id = "projects" class = "s-projects">
-            <h1 class="projects"> Portfolio </h1>
-            <h2 class="s-project-sub-header"> Check out some of my work.</h2>
-            <p class="s-projects-desc"> In my spare time I love tinkering on projects - from robots to circuit boards and everything in between! Click on the images below to see a brief summary of the project objective, and click "Details" for a detailed description of the design process! </p>
+            <h1 class="s-project-header section-heading"> Portfolio </h1>
+            <h2 class="s-project-subheader section-subheading"> Check out some of my work.</h2>
+            
+            <div class="s-projects-desc"> In my spare time I love tinkering on projects - from robots to circuit boards and everything in between! Click on the images below to see a brief summary of the project objective, and click "Details" for a detailed description of the design process! </div>
             
             <div class="s-projects-grid">
 
                 
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                    <h3 class = "s-projects-project-desc"> Project 1 </h3>
+                    <div class = "s-projects-project-desc"> Project 1 </div>
                 </div>
 
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/Screenshot 2024-01-06 at 11.34.39 PM.png">
-                    <h3 class = "s-projects-project-desc"> Project 2</h3>
+                    <div class = "s-projects-project-desc"> Project 2</div>
                 </div>
   
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                    <h3 class = "s-projects-project-desc"> Project 3</h3>
+                    <div class = "s-projects-project-desc"> Project 3</div>
                 </div>
   
 
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                    <h3 class = "s-projects-project-desc"> Project 4</h3>
+                    <div class = "s-projects-project-desc"> Project 4</div>
                 </div>
   
             </div>

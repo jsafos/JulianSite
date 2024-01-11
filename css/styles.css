@@ -274,7 +274,7 @@
 
 .s-resume-timeline{
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1050px;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
@@ -349,41 +349,59 @@
 
 /* ------------------------- PROJECTS ------------------------- */
 
+.s-projects-desc{
+  font-size: 22px;
+  margin: 0 auto;
+  width: 625px;
+  justify-content: center;
+  
+  color: rgb(48, 48, 48);
+  text-align: center;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+
 .s-projects-grid{
   margin: 0 8em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: solid red 1px;
   column-gap: 20px;
   row-gap: 20px;
 }
 
 .s-projects-project{
+  border: 1px solid #DDDDDD;
   position: relative;
-  text-align: center;
-  padding: 0;
-  border: 1px solid black
 }
 
 .s-projects-project-image{
   width: 100%;
-  margin: 0;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
-
-  
+  margin: 0;
 }
 
 .s-projects-project-desc{
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 50%;
   left: 50%;
+  padding-top: 25%;
   transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  
+
   border: 1px solid red;
   visibility: hidden;
   opacity: 0;
+  background: #36454e6b;
   transition: opacity .2s, visibility .2s;
 }
+
+
+
 
 .s-projects-project:hover{
   cursor: pointer;
@@ -394,3 +412,6 @@
   opacity: 1;
   cursor: pointer;
 }
+
+
+
