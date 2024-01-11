@@ -163,7 +163,7 @@
 
 .s-about{
   background-color: #8899AC;
-  background-image: linear-gradient(350deg, #627f9d, #164772);
+  background-image: linear-gradient(350deg, #5892a4, #72a0aa);
   padding-bottom: 50px;
 }
 
@@ -370,14 +370,15 @@
 }
 
 .s-projects-project{
-  border: 1px solid #DDDDDD;
   position: relative;
 }
 
 .s-projects-project-image{
   width: 100%;
+  height: 100%;
   aspect-ratio: 16 / 9;
-  margin: 0;
+  margin: 0 0;
+  padding: 0;
 }
 
 .s-projects-project-desc{
@@ -391,15 +392,11 @@
 
   text-align: center;
 
-  
-
-  border: 1px solid red;
   visibility: hidden;
   opacity: 0;
   background: #36454e6b;
   transition: opacity .2s, visibility .2s;
 }
-
 
 
 
@@ -415,3 +412,34 @@
 
 
 
+/* ------------------------- Footer ------------------------- */
+
+.s-footer-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 20px;
+
+  background-color: #72a0aa;
+
+
+
+}
+
+
+.s-footer-left{
+  text-align: center;
+
+
+}
+
+.s-footer-middle{
+  text-align: center;
+  background-color: blue;
+
+}
+
+.s-footer-right{
+  text-align: center;
+  background-color: green;
+
+}
