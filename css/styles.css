@@ -367,6 +367,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
+  margin-bottom: 60px;
 }
 
 .s-projects-project{
@@ -414,32 +415,58 @@
 
 /* ------------------------- Footer ------------------------- */
 
+
+.s-footer{
+  background-color: #5892a4;
+
+}
+
+.s-footer-heading{
+  text-align: center;
+}
+
 .s-footer-columns{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 20px;
-
-  background-color: #72a0aa;
-
-
-
+  grid-template-columns: 1fr 1fr;
+  margin: 0 400px;
+  padding-top: 5px;
+  margin-bottom: 20px;
 }
 
-
-.s-footer-left{
-  text-align: center;
-
-
+.s-footer-left, .s-footer-right{
+  position: relative;
 }
 
-.s-footer-middle{
+.s-footer-email-icon, 
+.s-footer-email, 
+.s-footer-contact-desc, 
+.s-footer-number, 
+.s-footer-linkedin-desc, 
+.s-footer-linkedin
+{
+  display: block;
   text-align: center;
-  background-color: blue;
-
+  text-decoration: none;
 }
 
-.s-footer-right{
-  text-align: center;
-  background-color: green;
+.s-footer-contact-desc, 
+.s-footer-linkedin-desc{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
 
+.s-footer-email-icon, 
+.s-footer-linkedin{
+  font-size: 60px;
+}
+
+.s-footer-desc{
+  text-align: center;
+  background-color: #1f4c65;
+}
+
+.s-footer-email, 
+.s-footer-number{
+  line-height: 30px;
+  font-size: 20px;
 }
