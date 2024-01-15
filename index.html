@@ -18,9 +18,18 @@
 
     <body>
 
+        <!-- ======================= NAVBAR ======================= -->
+
+
         <!-- ======================= INTRO ======================= -->
 
         <section id = "intro" class = "s-intro">
+
+
+            <nav class="nav-bar2">
+                <button class="js-nav-button nav-hambuger fa-solid fa-bars" onclick="navClickOpen()"></button>
+            </nav>
+    
 
             <div class = "s-intro-content">
 
@@ -45,8 +54,9 @@
     
             </div>
 
+        
         </section>
-
+    
         <!-- ======================= ABOUT ======================= -->
         <section id = "about" class = "s-about"> 
             
@@ -99,13 +109,13 @@
                         
 
                             <h3 class = "s-about-centre-skill-title-two"> Technologies  </h3>
-                   
+                
                                 <p class = "s-about-centre-skill-content-two"> C/C++ </p>
                                 <p class = "s-about-centre-skill-content-two"> Python <p>
                                 <p class = "s-about-centre-skill-content-two"> Verilog/SystemVerilog </p>
                                 <p class = "s-about-centre-skill-content-two"> HTML/CSS/JS </p>
                                 <p class = "s-about-centre-skill-content-two"> Git, VS Code, PyCharm</p>
-                       
+                    
                             
                             <!-- add more skill conrenrt?-->
 
@@ -127,7 +137,7 @@
         <section id = "resume" class = "s-resume">
             <div class = "s-resume-header section-heading"> RESUME </div>
             <div class = "s-resume-subheader section-subheading"> Here is my resume</div>
-           
+        
             <div class="s-resume-resume-dec"> The following shows my engineering journey. I have experience working in a wide range of industries from vehicle, to aerospace, to consumer electronics. </div>
 
 
@@ -288,18 +298,18 @@
                     <img class = "s-projects-project-image" src = "images/projects/Screenshot 2024-01-06 at 11.34.39 PM.png">
                     <div class = "s-projects-project-desc"> Project 2</div>
                 </div>
-  
+
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
                     <div class = "s-projects-project-desc"> Project 3</div>
                 </div>
-  
+
 
                 <div class = "s-projects-project">
                     <img class = "s-projects-project-image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
                     <div class = "s-projects-project-desc"> Project 4</div>
                 </div>
-  
+
             </div>
         
         
@@ -320,8 +330,6 @@
                     <div class = "s-footer-email"> safosj1@mcmaster.ca</div>
                     <div class="s-footer-number"> +1 (647)-549-3885 </div>
 
-                    
-
                 </div>
 
                 <div class="s-footer-right">
@@ -339,6 +347,10 @@
             <div class="s-footer-desc"> Designed from Scratch - Julian Safos 2024 </div>
         </section>
 
+
+    
+        <button onclick="topFunction()" id= "to-top-button" title="Go to top">Top</button>
+        <script src="js/main.js"></script> 
 
     </body>
 </html>
