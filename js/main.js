@@ -71,10 +71,23 @@ function navClickClose(){
     let buttonCode = document.querySelector(".nav-bar2");
     buttonCode.innerHTML = `<button class="js-nav-button nav-hambuger fa-solid fa-bars" onclick="navClickOpen()"></button>
     `;
+}
 
+
+function popup(){
+    alert("I am an alert box!");
 }
 
 
 
+document.querySelectorAll('.image-container img').forEach(image => {
+    image.onclick = () => {
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
 
 
+document.querySelector('.popup-image .close-popup').onclick = () =>{ 
+    document.querySelector('.popup-image').style.display = 'none';
+}
