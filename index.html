@@ -18,9 +18,6 @@
 
     <body>
 
-        <!-- ======================= NAVBAR ======================= -->
-
-
         <!-- ======================= INTRO ======================= -->
 
         <section id = "intro" class = "s-intro">
@@ -144,6 +141,27 @@
             <!-------- Vertical timeline 1 -------->
             <div class = "s-resume-work-experience s-resume-section"> Work Experience</div>
             <div class="s-resume-timeline">
+
+                <!-------- ENTRY 4 -------->
+                <div class="timeline-left">
+                    <h1> SOC Power Analysis & Design Verification Engineering Intern </h1>
+                    <h2> Septemver 2023 &mdash; Present </h2>
+                </div>
+                
+                <div class = "timeline-middle">
+                    <div class="timeline-point">
+                        <img src="images/companies/nvidia.png">
+                    </div>
+                </div>
+                
+                <div class="timeline-right">
+                    <h3> Nvidia </h3>
+                    <div class="line"></div>
+                    <p> 
+                        Created and implemented a comprehensive test plan for the memory power management features of next-generation AI accelerator hardware, utilizing C and Verilog. Collaborated with IP teams and external specifications throughout the development process.
+                    </p>
+                </div>
+                
 
                 <!-------- ENTRY 4 -------->
                 <div class="timeline-left">
@@ -286,56 +304,78 @@
             
             <div class="s-projects-desc"> In my spare time I love tinkering on projects - from robots to circuit boards and everything in between! Click on the images below to see a brief summary of the project objective, and click "Details" for a detailed description of the design process! </div>
             
-            <div class="container">
 
-                <div class = "image-container">
-                    <div class = "image"> 
-                        <img src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
+                <div class = "project-grid">
+
+                    <div class = "image-container" >
+                        <div class = "image-overlay">
+                            <div class= "image-title">  Stepper Motor ASIC </div>
+                            <button data-name = "asic" onclick="popup2(this);" class = "image-button"> Learn More </button>
+                        </div>
+                        <img class = "image" src = "images/projects/stepperasic.png">
                     </div>
 
-                    <div class = "image"> 
-                        <img src = "images/Unknown.jpeg">
+                    <div class = "image-container">
+                        <div class = "image-overlay">
+                            <div class= "image-title">  Lab Robot </div>
+                            <button data-name = "robot" onclick="popup2(this);" class = "image-button"> Learn More </button>
+                        </div>
+                        <img class = "image" src = "images/projects/cadathonbot.png">
                     </div>
 
-                    <div class = "image"> 
-                        <img src = "images/projects/Screenshot 2024-02-18 at 6.00.50 PM.png">
+                    <div class = "image-container">
+                        <div class = "image-overlay">
+                            <a href="#" class = "image-button"> Learn More </a>
+                        </div>
+                        <img class = "image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
                     </div>
 
-                    <div class = "image"> 
-                        <img src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
+                    <div class = "image-container">
+                        <div class = "image-overlay">
+                            <button onclick="popup();" class = "image-button"> Learn More </button>
+                        </div>
+                        <img class = "image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
                     </div>
 
-                    <div class = "image"> 
-                        <img src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                    </div>
-
-                    <div class = "image"> 
-                        <img src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                    </div>
-
-                    <div class = "image"> 
-                        <img src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
+                    <div class = "image-container">
+                        <div class = "image-overlay">
+                            <a href="#" class = "image-button"> Learn More </a>
+                        </div>
+                        <img class = "image" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
                     </div>
 
                 </div>
 
-                <div class="popup-image">
-                    <div class="package">
-                        <img class = "img-popup" src = "images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg">
-                        <p class = "text-popup"> Test on Project 1 </p>
-                        <div class = "close-popup"> Close </div>
+                <div class="modals">
+
+                    <div class="modal-project" data-target = "asic"> 
+                        <img src="images/projects/heshan-perera-aIJa8dPdzRI-unsplash.jpg" alt="" class="modal-image">
+                        <div class="modal-text"> Verilog, ASIC Design, Embedded Systems</div>
+                        <div class="modal-text"> My project desc </div>
+                        <button class = "modal-close" onclick="closepopup()"> Close</button>
                     </div>
 
+                    <div class="modal-project" data-target = "robot"> 
+                        <img src="images/projects/cadathonbot.png" alt="" class="modal-image">
+                        <div class="modal-text"> CAD, Robotics </div>
+                        <div class="modal-text"> My project desc for cadathons</div>
+                        <button class = "modal-close" onclick="closepopup()"> Close</button>
+                    </div>
+
+
                 </div>
+          
 
 
-            </div>
+
         
         
         
         </section>
 
         <!-- ======================= FOOTER ======================= -->
+
+
         <section id = "footer" class = "s-footer">
 
             <div class="s-footer-heading section-heading"> CONTACT</div>
@@ -357,8 +397,6 @@
                     <a class="s-footer-linkedin fa-brands fa-linkedin fa-2x" href = "https://www.linkedin.com/in/julian-safos/" target="_blank" ></a>
 
                 </div>
-
-                
                 
 
             </div>

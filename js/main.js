@@ -69,25 +69,43 @@ function navClickOpen(){
 
 function navClickClose(){
     let buttonCode = document.querySelector(".nav-bar2");
-    buttonCode.innerHTML = `<button class="js-nav-button nav-hambuger fa-solid fa-bars" onclick="navClickOpen()"></button>
-    `;
-}
-
-
-function popup(){
-    alert("I am an alert box!");
+    buttonCode.innerHTML = `<button class="js-nav-button nav-hambuger fa-solid fa-bars" onclick="navClickOpen()"></button>`;
 }
 
 
 
-document.querySelectorAll('.image-container img').forEach(image => {
-    image.onclick = () => {
-        document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = image.getAttribute('src');
-    }
-});
+function popup2(d){
+    let project = d.getAttribute('data-name');
+
+    console.log(project);
 
 
-document.querySelector('.popup-image .close-popup').onclick = () =>{ 
-    document.querySelector('.popup-image').style.display = 'none';
+    let previewContainer = document.querySelector('.modals');
+    let previewBox = previewContainer.querySelectorAll('.modal-project');
+    console.log("ALL modal", previewBox)
+
+    previewContainer.style.display = 'flex';
+
+
+    previewBox.forEach(preview => {
+        console.log("Each modal", preview);
+
+        let target = preview.getAttribute('data-target');
+        console.log(target);
+        if (project == target){
+            preview.classList.add('active')
+        }
+
+     });
 }
+
+function closepopup(){
+    let previewContainer = document.querySelector('.modals');
+    let previewBox = previewContainer.querySelectorAll('.modal-project');
+    previewContainer.style.display = 'none';
+    previewBox.forEach(preview => {
+        preview.classList.remove('active');
+    });
+}
+
+
