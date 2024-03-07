@@ -54,10 +54,12 @@ html {
 
 .section-heading{
   font-size: 20px;
-  color: darkblue;
+  color: rgb(10, 25, 42);
   text-align: center;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 20px;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 .section-subheading{
@@ -66,6 +68,10 @@ html {
   text-align: center;
   font-weight: 700;
   padding-bottom: 30px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -134,14 +140,9 @@ html {
 }
 
 
-.s-intro-title, .s-intro-desc{
+.s-intro-title, .s-intro-desc {
   font-family: 'Kanit', sans-serif;
   color: white;
-  text-shadow:
-    -1px -1px 0 #1f4c65,
-    1px -1px 0 #1f4c65,
-    -1px 1px 0 #1f4c65,
-    1px 1px 0 #1f4c65;
 }
 
 .s-intro-title{
@@ -153,7 +154,7 @@ html {
 .s-intro-desc{
   margin-top: 0px;
   font-size: 20px;
-  
+  letter-spacing: 2px;
 }
 
 .s-intro-scroll{
@@ -167,11 +168,11 @@ html {
   border-style: solid;
   border-width: 1px;
   font-size: 26px;
-  color: lightgray;
+  color: white;
   text-decoration: none;
   position: absolute;
   margin: 0 auto;
-
+  font-family: 'Kanit', sans-serif;
 }
 
 
@@ -209,25 +210,26 @@ html {
 
 .s-about{
   background-color: #8899AC;
-  background-image: linear-gradient(350deg, #5892a4, #72a0aa);
+  background-image: linear-gradient(30deg, rgba(19, 146, 189, 0.873), rgb(80, 163, 205));
+
   padding-bottom: 50px;
   scroll-behavior: smooth;
 }
 
 
-.s-about-profile{
+.s-about-profile{ 
   display: flex;
   flex-direction: row; 
 }
 
 .s-about-left{
   display: block;
-  flex: 20%;
+  flex: 15%;
 }
 
 .s-about-right{
   display: block;
-  flex: 20%;
+  flex: 15%;
 }
 
 .s-about-center{
@@ -266,16 +268,34 @@ html {
   color: black;
   text-align: justify;
   font-size: 20px;
+  font-family: "Lora";
+  line-height: 32px;
 }
 
 
 .s-about-centre-content{
   display: flex;
   flex-direction: row;
-  
   margin-top: 30px;
   justify-content: center;
+  
 
+}
+
+.s-about-centre-content h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.s-about-centre-content p{
+  color: black;
+  font-family: "Lora";
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 18px;
 }
 
 .s-about-centre-col-left{
@@ -300,7 +320,7 @@ html {
 /* ------------------------- RESUME ------------------------- */
 
 .s-resume{
-  background-color: #c6c6c6;
+  background-color: white;
 }
 
 .s-resume-subheader{
@@ -313,18 +333,31 @@ html {
   width: 625px;
   justify-content: center;
   
-  color: rgb(48, 48, 48);
+  color: black;
   text-align: center;
   line-height: 35px;
 
+  font-size: 20px;
+ font-family: "Lora";
+  line-height: 32px;
+
 }
+
+.s-resume-section{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lora";
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
 
 .s-resume-timeline{
   margin: 0 auto;
-  max-width: 1050px;
+  max-width: 1100px;
   padding: 25px;
   display: grid;
-  grid-template-columns: 1fr 2px 1fr;
+  grid-template-columns: 2fr 2px 3fr;
   color: black;
 }
 
@@ -355,11 +388,14 @@ html {
 .timeline-right{
   padding-left: 40px;
   margin-bottom: 50px;
+  font-family: "Lora";
+  
 }
 .timeline-left{
   padding-left: 40px;
   padding-right: 20px;
   margin-right: 40px;
+  font-family: "Lora";
 }
 
 .timeline-right h3{
@@ -371,44 +407,58 @@ html {
 }
 
 .timeline-left h1 {
-  font-size: 16px;
+  font-size: 19px;
+  font-family: "Lora";
   margin-bottom: 5px;
   text-align: right;
+  font-weight: 600;
 }
 
 .timeline-left h2 {
-  font-size: 14px;
+  font-size: 16px;
   text-align: right;
+  font-weight: 500;
+}
+
+.timeline-right h3{
+  font-size: 19px;
+  font-family: "Lora";
+  font-weight: 600;
+
+}
+
+.timeline-right p{
+  word-spacing: 2px;
+  text-align: justify;
+
 }
 
 .line{
   background-color: black;
-  height: 2px;
-  width: 100px;
+  height: 1px;
+  width: 100%;
   margin-bottom: 8px;
 }
 
-.s-resume-section{
-  font-size: 30px;
-  text-align: center;
-}
 
 
 /* ------------------------- PROJECTS ------------------------- */
 .s-projects{
-  background-color: grey;
+  background-color: rgb(212, 212, 212);
 }
 
 .s-projects-desc{
-  font-size: 22px;
   margin: 0 auto;
   width: 625px;
   justify-content: center;
   
-  color: rgb(48, 48, 48);
+  color: black;
   text-align: center;
-  line-height: 35px;
   margin-bottom: 40px;
+
+  font-size: 20px;
+  font-family: "Lora";
+  line-height: 32px;
 }
 
 
@@ -427,14 +477,15 @@ html {
   
   position: relative;
   overflow: hidden;
-  border: 1px black solid;
 
 }
 
 .image{
   height: 100%;
   width: 100%;
+  object-fit: cover;
   display: block;
+  
 }
 
 .image-overlay{
@@ -452,7 +503,7 @@ html {
 }
 
 .image-overlay:hover{
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.9);
   opacity: 1;
 }
 
@@ -501,13 +552,57 @@ html {
   margin: 2rem;
   width: 50%;
   height: 50%;
+  max-height: 90vh;
   overflow: hidden;
 }
 
 .modals .modal-project .modal-image{
   height: 100%;
-  width: 100%;
+  max-height: 30vh;
+  width: auto;
+  border: 1px solid black;
 }
+
+.modal-background{
+  background-color: white;
+}
+.modal-title{
+  margin-top: 30px;
+  font-size: 26px;
+  line-height: 39px;
+  font-family: 'Kanit', sans-serif;
+}
+.modal-text1{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.modal-text2{
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  line-height: 30px;
+  font-family: "Lora";
+}
+
+.modal-close{
+  margin-top: 30px;
+  width: 100%;
+  height: 2rem;
+  font-size: 15px;
+  font-family: "Roboto";
+  border: none
+}
+
+.modal-close:hover{
+  background-color: darkgray;
+}
+
+
 
 
 .modals .modal-project.active{
@@ -621,24 +716,26 @@ html {
 
 
 .s-footer{
-  background-color: #5892a4;
+  background-color: rgb(10, 25, 42);
 
 }
 
 .s-footer-heading{
-  text-align: center;
+    color: lightgrey;
+    text-align: center;
 }
 
 .s-footer-columns{
+  font-family: "Lora";
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: top;
   justify-content: center;
   padding-top: 5px;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
   gap: 50px;
-}
+  color: lightgrey;}
 
 .s-footer-left, .s-footer-right{
   position: relative;
@@ -654,26 +751,27 @@ html {
   display: block;
   text-align: center;
   text-decoration: none;
+  padding: 5px 5px;
+
 }
 
 .s-footer-contact-desc, 
 .s-footer-linkedin-desc{
-  padding-bottom: 10px;
   font-size: 20px;
 }
 
 .s-footer-email-icon, 
 .s-footer-linkedin{
   font-size: 60px;
+  color: lightgrey;
 }
 
 .s-footer-desc{
   text-align: center;
-  background-color: #1f4c65;
+  color: white;
 }
 
-.s-footer-email, 
-.s-footer-number{
+.s-footer-email{
   line-height: 30px;
   font-size: 20px;
 }

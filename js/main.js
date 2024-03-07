@@ -108,4 +108,5 @@ function closepopup(){
     });
 }
 
+var active = 0;
 
