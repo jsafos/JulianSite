@@ -9,47 +9,6 @@ html {
 }
 
 
-/* ------------------------- NAV BAR ------------------------- */
-
-.nav-bar2{
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  right: 10px;
-  border: 1px red solid;
-  border: none;
-}
-
-.nav-bar-list{
-  list-style-type: none;
-  text-align: right;
-  background-color: rgb(14, 14, 64);
-  width: 80px;
-  border-radius: 8px;
-  padding-right: 10px;
-}
-
-.nav-bar-option{
-  color: white;
-}
-
-.nav-hambuger,
-.nav-x {
-  color: white;
-  font-size: 40px;
-  right: 5px;
-  justify-content: right;
-  background-color: rgba(0,0,0,0);
-  cursor: pointer;
-  border: none;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-
-}
-
-.nav-hambuger{
-  margin-right: 10px;
-}
-
 /* ------------------------- ALL SECTIONS ------------------------- */
 
 .section-heading{
@@ -68,7 +27,8 @@ html {
   text-align: center;
   font-weight: 700;
   padding-bottom: 30px;
-
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -105,8 +65,8 @@ html {
 .s-intro{ 
   background: url("/images/pexels-francesco-ungaro-998641.jpg") no-repeat center fixed;
   background-size: cover;
-  width: 100%; /*?*/
-  height: auto;
+  width: 100%;
+  height: 100vh;
   background-position: center;
   display: table;
   position: relative;
@@ -119,7 +79,6 @@ html {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   background: rgba(0,0,0,0.5);
 }
 
@@ -129,14 +88,14 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
   margin: 0 auto;
+  margin-top: 30vh;
 }
 
 .s-intro-content-inner{
   text-align: center;
   justify-content: center;
-  position: relative;
 }
 
 
@@ -158,7 +117,7 @@ html {
 }
 
 .s-intro-scroll{
-  margin-top: 90px;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
 
@@ -170,19 +129,27 @@ html {
   font-size: 26px;
   color: white;
   text-decoration: none;
-  position: absolute;
   margin: 0 auto;
   font-family: 'Kanit', sans-serif;
 }
 
 
 .s-intro-social-buttons-display{
+  /*
   position: absolute;
   margin: 0 auto;
   text-align: center;
   justify-content: center;
   align-items: center;
   bottom: 10px;
+  */
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
 }
 
 .s-intro-social-github,
@@ -202,7 +169,7 @@ html {
 .s-intro-social-github:hover,
 .s-intro-social-linkedin:hover, 
 .s-intro-social-email:hover{
-  color: purple;
+  color: rgba(31, 215, 232, 0.873);
 }
 
 
@@ -797,3 +764,6 @@ html {
 #to-top-button:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+
+
